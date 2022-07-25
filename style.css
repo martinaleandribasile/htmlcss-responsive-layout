@@ -6,6 +6,7 @@
 
 body {
   font-family: 'PT Sans', sans-serif;
+  line-height: 35px;
 }
 
 img {
@@ -19,7 +20,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 25px;
 }
 
 h3 {
@@ -162,7 +163,7 @@ section:nth-of-type(even) {
 }
 
 #product-presentation button {
-  width: 35%;
+  width: 40%;
   background-color: #0084fd;
   color: white;
 }
@@ -356,6 +357,7 @@ footer a {
 
   #product-presentation img {
     width: 50%;
+    height: auto;
   }
 
   #product-presentation .card {
