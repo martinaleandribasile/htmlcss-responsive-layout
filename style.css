@@ -1,0 +1,458 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 60px;
+  color: #fdc15f;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+}
+
+/** flex **/
+.flex {
+  display: flex;
+}
+
+.dir-col {
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.column {
+  width: 100%;
+}
+
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  border-radius: 25px;
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.card.text-left {
+  text-align: left;
+}
+
+header {
+  position: fixed;
+  background-color: #0084fd;
+  width: 100%;
+  min-height: 80px;
+  line-height: 80px;
+  z-index: 1000;
+}
+
+footer {
+  background-color: #333333;
+}
+
+.menu {
+  color: #fff;
+}
+
+.menu ul {
+  display: none;
+}
+
+header .fa-bars,
+header img {
+  vertical-align: middle;
+}
+
+
+main {
+  padding-top: 80px;
+}
+
+
+section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 40px 0;
+}
+
+section:nth-of-type(even) {
+  background-color: #9792e4;
+}
+
+
+#product-presentation .card {
+  background-color: #b5ddff;
+}
+
+#product-presentation .card>h2,
+#product-presentation .card>p,
+#product-presentation .card>i {
+  padding-bottom: 30px;
+}
+
+#product-presentation .card>img {
+  margin-top: 30px;
+}
+
+#product-presentation .card>i {
+  font-size: xxx-large;
+  color: #0084fd;
+}
+
+#product-presentation .column:first-child .card {
+  text-align: left;
+  padding-bottom: 0;
+}
+
+#product-presentation .column:first-child .card>div>*:not(button) {
+  padding-bottom: 30px;
+}
+
+#product-presentation button {
+  width: 35%;
+  background-color: #0084fd;
+  color: white;
+}
+
+
+#product-presentation .card>h2,
+#product-presentation .card>div>h2 {
+  color: #0084fd;
+}
+
+
+
+#planning .card p {
+  font-style: italic;
+}
+
+#planning .column>div>* {
+  padding: 30px 0;
+}
+
+#planning .card {
+
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#planning .column>div:not(.card)>h2,
+#planning .column>div:not(.card)>p {
+  color: white;
+}
+
+#planning .card>h2,
+#planning .card>p,
+#planning .card>img {
+  padding-bottom: 30px;
+  font-size: large;
+}
+
+#planning .card>.icon {
+  background-color: #9792e4;
+  padding: 25px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#testimonials .info>* {
+  padding: 30px 0;
+}
+
+.info>h2,
+#about .column h2 {
+  color: #9792e4;
+}
+
+.biography>* {
+  padding: 15px 0;
+}
+
+#testimonials .card {
+  background-color: #9792e4;
+  color: white;
+  margin: 40px 0;
+  font-size: 20px;
+}
+
+#testimonials .card>* {
+  padding: 10px 0;
+}
+
+#testimonials img,
+#about img {
+  border-radius: 50%;
+}
+
+#benefits .column>h2 {
+  color: white;
+  text-align: center;
+}
+
+
+#benefits .card {
+  text-align: left;
+  color: #9792e4;
+  margin-top: 30px;
+}
+
+#benefits .card>*,
+#about .card>* {
+  padding: 20px 0;
+}
+
+#benefits .card>p {
+  color: #333333;
+}
+
+#benefits .card>button {
+  background-color: #9792e4;
+  color: white;
+  border-radius: 20px;
+  width: 30%;
+  padding: 10px;
+}
+
+#about .column>div>*:not(img, button) {
+  padding: 30px 0;
+}
+
+#about .card {
+  text-align: left;
+  color: #9792e4;
+  margin-top: 30px;
+}
+
+#about .card>div {
+  position: relative;
+}
+
+#about .card button {
+  background-color: #9792e4;
+  color: white;
+  padding: 10px;
+  width: 70%;
+}
+
+#about .fa-quote-left {
+  color: #9792e4;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  font-size: 60px;
+}
+
+.fa-linkedin {
+  margin-right: 5px;
+}
+
+#started {
+  margin-bottom: 0;
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+#started .column>*:not(button) {
+  padding: 20px 0;
+}
+
+#started a {
+  color: white;
+}
+
+#started button {
+  color: #9792e4;
+}
+
+footer .row>* {
+  padding: 30px 0;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  color: #9792e4;
+}
+
+@media screen and (min-width: 768px) {
+  main .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #product-presentation .column {
+    width: calc(100% / 3);
+    padding: 0 10px;
+  }
+
+  #product-presentation .column:first-child {
+    width: calc(100% / 3 * 2);
+  }
+
+  #product-presentation img {
+    width: 50%;
+  }
+
+  #product-presentation .card {
+    height: 100%;
+  }
+
+  #testimonials .card {
+    flex-direction: row;
+
+  }
+
+  #testimonials img {
+    width: 40%;
+    height: auto;
+  }
+
+  .biography>* {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+
+  #benefits .column {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #benefits .card {
+    width: calc(100% / 2 - 20px);
+    margin: 10px 10px;
+  }
+
+  #benefits .container>h2 {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  #about .column {
+    display: flex;
+  }
+
+  #about .column>div {
+    flex-basis: 50%;
+    padding: 0 90px;
+  }
+
+  #about .card {
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  main .container {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .menu .fa-bars {
+    display: none;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu li {
+    display: inline-block;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+
+
+  #product-presentation .column:first-child .card {
+    flex-direction: row;
+  }
+
+  #testimonials img {
+    width: 20%;
+    height: auto;
+  }
+
+  #benefits .card {
+    width: calc(100% / 3 - 20px);
+    margin: 10px 10px;
+  }
+
+  #planning .column {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #planning .column>div {
+    flex-basis: 55%;
+  }
+
+  #planning .column .card {
+    height: 60%;
+    align-self: flex-end;
+    flex-basis: 35%;
+  }
+
+  #planning .column .card>img {
+    height: 50%;
+    width: 45%;
+  }
+}
