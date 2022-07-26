@@ -104,10 +104,6 @@ footer {
   background-color: #333333;
 }
 
-.menu {
-  color: #fff;
-}
-
 .menu ul {
   display: none;
 }
@@ -140,7 +136,8 @@ section:nth-of-type(even) {
 
 #product-presentation .card>h2,
 #product-presentation .card>p,
-#product-presentation .card>i {
+#product-presentation .card>i,
+#product-presentation .column:first-child .card>div>*:not(button) {
   padding-bottom: 30px;
 }
 
@@ -158,10 +155,6 @@ section:nth-of-type(even) {
   padding-bottom: 0;
 }
 
-#product-presentation .column:first-child .card>div>*:not(button) {
-  padding-bottom: 30px;
-}
-
 #product-presentation button {
   width: 40%;
   background-color: #0084fd;
@@ -173,8 +166,6 @@ section:nth-of-type(even) {
 #product-presentation .card>div>h2 {
   color: #0084fd;
 }
-
-
 
 #planning .card p {
   font-style: italic;
@@ -190,8 +181,14 @@ section:nth-of-type(even) {
   margin-bottom: 50px;
 }
 
+#planning .column img {
+  height: auto;
+}
+
 #planning .column>div:not(.card)>h2,
-#planning .column>div:not(.card)>p {
+#planning .column>div:not(.card)>p,
+.menu,
+#started a {
   color: white;
 }
 
@@ -213,7 +210,8 @@ section:nth-of-type(even) {
   align-items: center;
 }
 
-#testimonials .info>* {
+#testimonials .info>*,
+#about .column>div>*:not(img, button) {
   padding: 30px 0;
 }
 
@@ -225,8 +223,14 @@ figure {
   margin-left: calc(50% - 50px);
 }
 
+figure>img {
+  object-fit: cover;
+}
+
 .info>h2,
-#about .column h2 {
+#about .column h2,
+#started button,
+footer a {
   color: #9792e4;
 }
 
@@ -262,7 +266,8 @@ figure {
 }
 
 #benefits .card>*,
-#about .card>* {
+#about .card>*,
+#started .column>*:not(button) {
   padding: 20px 0;
 }
 
@@ -276,10 +281,6 @@ figure {
   border-radius: 20px;
   width: 30%;
   padding: 10px;
-}
-
-#about .column>div>*:not(img, button) {
-  padding: 30px 0;
 }
 
 #about .card {
@@ -318,27 +319,12 @@ figure {
   padding-top: 30px;
 }
 
-#started .column>*:not(button) {
-  padding: 20px 0;
-}
-
-#started a {
-  color: white;
-}
-
-#started button {
-  color: #9792e4;
-}
-
 footer .row>* {
   padding: 30px 0;
   text-align: center;
   color: white;
 }
 
-footer a {
-  color: #9792e4;
-}
 
 @media screen and (min-width: 768px) {
   main .container {
@@ -375,6 +361,7 @@ footer a {
   }
 
   figure {
+    margin-top: 20px;
     width: 200px;
     height: 200px;
     margin-left: 0;
@@ -468,7 +455,7 @@ footer a {
   }
 
   #planning .column .card {
-    height: 60%;
+    height: 65%;
     align-self: flex-end;
     flex-basis: 35%;
   }
