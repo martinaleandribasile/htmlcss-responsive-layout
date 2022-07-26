@@ -241,8 +241,9 @@ footer a {
 .biography>p::before,
 .biography>p::after {
   color: white;
-  font-size: 45px;
-  margin: 0px 15px;
+  font-size: 69px;
+  vertical-align: bottom;
+  line-height: 0;
 
 }
 
