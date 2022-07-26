@@ -238,6 +238,22 @@ footer a {
   padding: 15px 0;
 }
 
+.biography>p::before,
+.biography>p::after {
+  color: white;
+  font-size: 45px;
+  margin: 0px 15px;
+
+}
+
+.biography>p::after {
+  content: close-quote;
+}
+
+.biography>p::before {
+  content: open-quote;
+}
+
 #testimonials .card {
   background-color: #9792e4;
   color: white;
@@ -353,6 +369,7 @@ footer .row>* {
   #testimonials .card {
     flex-direction: row;
     column-gap: 20px;
+    align-items: center;
 
   }
 
@@ -361,7 +378,6 @@ footer .row>* {
   }
 
   figure {
-    margin-top: 20px;
     width: 200px;
     height: 200px;
     margin-left: 0;
